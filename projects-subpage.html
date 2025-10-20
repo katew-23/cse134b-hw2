@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Projects Subpage</title>
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+
+    <style>
+        nav {
+            border: 20px solid transparent;
+        }
+
+        main {
+            border: 40px solid transparent;
+        }
+
+        h1 {
+            border-left: 600px solid transparent; 
+            border-right: 600px solid transparent;
+        }
+
+        div {
+            border-left: 300px solid transparent; 
+            border-right: 300px solid transparent;
+            border-bottom: 30px solid transparent;
+        }
+
+        p {
+            border-left: 50px solid transparent; 
+        }
+
+        footer {
+            border-left: 650px solid transparent; 
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a> &nbsp;
+            <a href="experiences.html">Experiences</a> &nbsp;
+            <a href="projects.html">Projects</a> &nbsp;
+            <a href="contact.html">Contact</a> &nbsp;
+            <a href="resume.html">Resume</a>
+        </nav>
+        <hr>
+    </header>
+
+    <noscript>This site works without JavaScript. Some embeds just won't load.</noscript>
+
+    <main>
+        <!-- This section will be updated once we implement JavaScript -->
+         
+        <h1>Project Title</h1>
+
+        <div>
+            <h2>My role in the project:</h2>
+            <p>
+                Describe what you owned and how you collaborated. Mention 1-2 key
+                design or technical decisions you made and why they mattered.
+            </p>
+            <p>
+                Provide a short outcome: what shipped, who used it, or what improved
+                (e.g., reliability, speed, usability).
+            </p>
+        </div>
+
+        <div>
+            <h2>What I learned:</h2>
+            <p>
+                List concrete lessons—tradeoffs you discovered, debugging wins,
+                tooling you adopted, or how you refined requirements with teammates.
+            </p>
+            <p>
+                End with what you'd do next or how this influenced later projects.
+            </p>
+        </div>
+
+        <template id="project-facts">
+            <div>
+                <h2>Quick Facts</h2>
+                <ul>
+                    <li>Team size: 4</li>
+                    <li>Timeline: 6 weeks</li>
+                    <li>Tech: React Native, Express, MongoDB</li>
+                </ul>
+            </div>
+        </template>
+
+        <div>
+            <h2>Media</h2>
+
+            <p>Short feature demo (video):</p>
+            <video controls width="480" poster="assets/img/memori-thumbnail.webp">
+                <source src="assets/media/placeholder-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <p>Developer notes (audio):</p>
+            <audio controls>
+                <source src="assets/media/hello.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </main>
+
+    <footer>
+       <p>
+            <svg 
+                viewBox="0 0 100 100"
+                width="16" height="16">
+                <circle cx="50" cy="50" r="46" stroke="black" stroke-width="6" fill="none" />
+                <path d="M66 36
+                    a20 20 0 1 0 0 28"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"/>
+            </svg> 
+            2025 Kate Wang |
+            <a href="https://www.linkedin.com/in/kate-wang-174593244/">LinkedIn</a>
+        </p>
+    </footer>
+    
+</body>
+
+</html>

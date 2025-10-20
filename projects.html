@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Projects Page</title>
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+
+    <style>
+        nav {
+            border: 20px solid transparent;
+        }
+
+        main {
+            border: 40px solid transparent;
+        }
+
+        table{
+            border-left: 300px solid transparent; 
+            border-right: 300px solid transparent;
+        }
+
+        td{
+            border-right: 50px solid transparent;
+            border-bottom: 50px solid transparent;
+        }
+
+        footer {
+            border-left: 650px solid transparent; 
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a> &nbsp;
+            <a href="experiences.html">Experiences</a> &nbsp;
+            <a href="projects.html">Projects</a> &nbsp;
+            <a href="contact.html">Contact</a> &nbsp;
+            <a href="resume.html">Resume</a>
+        </nav>
+        <hr>
+    </header>
+
+    <noscript>This site works without JavaScript. Some embeds just won't load.</noscript>
+
+    <main>
+         <table>
+            <tr>
+                <td>
+                    <img src="assets/img/memori-thumbnail.webp" alt="Memori Thumbnail" width="350" />
+                </td>
+                <td>
+                    <a href="projects-subpage.html"><b>Memori</b></a>
+                    <p>
+                        A shared photo album and micro-journaling app that helps users preserve everyday moments with friends. 
+                        Each user can post photos or notes that appear in a shared calendar view. 
+                        Built using <b>React Native</b> with smooth navigation, profile pages, and a minimal grid-style gallery.
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="assets/img/foodflip-thumbnail.webp" alt="FoodFlip Thumbnail" width="350" />
+                </td>
+                <td>
+                    <a href="projects-subpage.html"><b>FoodFlip</b></a>
+                    <p>
+                        A swipe-based restaurant discovery app where users flip cards to view restaurant details. 
+                        The front displays name, cuisine, and price range, while the back reveals address, hours, 
+                        and top dishes. 
+                        The product displays recommended restaurants based on a user's liked restaurants, and users 
+                        can also view all their liked restaurants in one place.
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="assets/img/lockdin-thumbnail.webp" alt="LockdIn Thumbnail" width="350" />
+                </td>
+                <td>
+                    <a href="projects-subpage.html"><b>LockdIn</b></a>
+                    <p>
+                        A group productivity app that helps students stay focused through collaborative study sessions. 
+                        Groups set timers, block distracting apps, and deposit money into a shared fund using the Stripe API. 
+                        Features a ranking system, challenge mode, and clean group creation flow powered by Express.js and Supabase.
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <canvas id="trendCanvas" width="480" height="160"></canvas>
+                    <script>
+                        const c = document.getElementById('trendCanvas').getContext('2d');
+                        c.beginPath(); c.moveTo(30,130); c.lineTo(30,20); c.lineTo(470,20); c.stroke();
+                        const pts = [30,120, 120,90, 210,110, 300,70, 390,95, 470,60];
+                        c.beginPath(); c.moveTo(pts[0],pts[1]);
+                        for (let i=2;i<pts.length;i+=2) c.lineTo(pts[i],pts[i+1]);
+                        c.stroke();
+                    </script>
+                </td>
+                <td>
+                    Canvas Demo
+                </td>
+            </tr>
+         </table>
+    </main>
+
+    <footer>
+       <p>
+            <svg 
+                viewBox="0 0 100 100"
+                width="16" height="16">
+                <circle cx="50" cy="50" r="46" stroke="black" stroke-width="6" fill="none" />
+                <path d="M66 36
+                    a20 20 0 1 0 0 28"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"/>
+            </svg>  
+            2025 Kate Wang |
+            <a href="https://www.linkedin.com/in/kate-wang-174593244/">LinkedIn</a>
+        </p>
+    </footer>
+    
+</body>
+
+</html>
