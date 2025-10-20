@@ -61,23 +61,22 @@
         <form action="/contact" method="POST">
             <fieldset>
                 <legend>Contact Form</legend>
-                <label for="fullName">Full Name: <br>
-                    <input type="text" name="fullName" id="fullName" size="73" required/>
-                </label><br><br>
-                
-                <label for="email">Email: <br>
-                    <input type="email" name="email" id="email" size="73" required/>
-                </label><br><br>
-                
-                <label for="message">Message: <br>
-                    <textarea id="msg" name="msg" cols="60" rows="6"></textarea>
 
-                    <!-- Progress tag implementation (static for HW2) -->
-                    <p>
-                        <label for="msg-progress">Message length (demo):</label>
-                        <progress id="msg-progress" value="0" max="500">0/500</progress>
-                    </p>
-                </label><br><br>
+                <label for="fullName">Full Name:</label> <br>
+                <input type="text" name="fullName" id="fullName" size="73" required>
+                <br><br>
+                
+                <label for="email">Email:</label> <br>
+                <input type="email" name="email" id="email" size="73" required>
+                <br><br>
+                
+                <label for="msg">Message:</label> <br>
+                <textarea id="msg" name="msg" cols="60" rows="6"></textarea>
+
+                <!-- Progress tag implementation (static for HW2) -->
+                <label for="msg-progress">Message length (demo):</label>
+                <progress id="msg-progress" value="0" max="500">0/500</progress>
+                <br><br>
 
                 <button type="submit">Submit</button>
             </fieldset>
